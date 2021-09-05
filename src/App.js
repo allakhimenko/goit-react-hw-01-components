@@ -1,15 +1,15 @@
-import User from './components/User';
-import user from './components/user.json';
+import User from './components/Profile/User';
+import user from './components/Profile/user.json';
 
-import Statistics from './components/Statistical';
-import statistical from './components/statistical.json';
+import Statistics from './components/Statistical/Statistical';
+import statistical from './components/Statistical/statistical.json';
 
-import FriendList from './components/FriendList';
-import FriendListItem from './components/FriendListItem';
-import friends from './components/friends.json';
+import FriendList from './components/FriendList/FriendList';
+import FriendListItem from './components/FriendList/FriendListItem';
+import friends from './components/FriendList/friends.json';
 
-import Transactions from './components/Transactions';
-import transactions from './components/transactions.json';
+import Transactions from './components/Transactions/Transactions';
+import transactions from './components/Transactions/transactions.json';
 
 export default function App() {
   return (
