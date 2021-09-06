@@ -20,7 +20,7 @@ export default function App() {
         tag={user.tag}
         location={user.location}
         followers={user.stats.followers}
-        vievs={user.stats.views}
+        views={user.stats.views}
         likes={user.stats.likes}
       />
       <Statistics title={'Upload stats'} stats={statistical} />

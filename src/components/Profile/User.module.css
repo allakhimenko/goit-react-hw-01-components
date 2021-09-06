@@ -2,8 +2,67 @@
   margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
-  padding: 15px;
-  height: 500px;
   width: 300px;
-  border: 2px solid red;
+  border: 1px solid #d9d9d9;
+  box-shadow: -7px -7px 27px -5px rgba(83, 97, 108, 0.55);
+}
+
+.descr {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.avatar {
+  margin-top: 30px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 10px 10px 10px 0px rgba(34, 60, 80, 0.2);
+}
+
+.name {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.info {
+  color: #808080;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.stats {
+  list-style-type: none;
+  display: flex;
+  align-items: centre;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+
+  width: calc(100% / 3);
+  height: 80px;
+  background-color: #f2f2f2;
+  border: 1px solid #d9d9d9;
+}
+
+.label {
+  color: #808080;
+  margin-bottom: 4px;
+}
+
+.quantity {
+  font-weight: 700;
 }
