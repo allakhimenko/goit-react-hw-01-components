@@ -4,13 +4,15 @@ import s from './Statistical.module.css';
 export default function Statistics({ title, stats }) {
   return (
     <section className={s.container}>
-      {title && <h2 className={s.title}>{title}</h2>}
+      <div className={s.titleBox}>
+        {title && <h2 className={s.title}>{title}</h2>}
+      </div>
 
       <ul className={s.list}>
         {stats.map(({ id, label, percentage }) => (
           <li className={s.item} key={id}>
-            <span className="label">{label}</span>
-            <span className="percentage">{percentage}%</span>
+            <span className={s.text}>{label}</span>
+            <span className={s.text}>{percentage}%</span>
           </li>
         ))}
       </ul>
