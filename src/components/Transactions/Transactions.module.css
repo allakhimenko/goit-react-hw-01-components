@@ -1,0 +1,32 @@
+.table {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-collapse: collapse;
+  box-shadow: -7px -7px 27px -5px rgba(83, 97, 108, 0.55);
+}
+
+.thead {
+  font-weight: bold;
+  padding: 5px;
+  height: 30px;
+  background: #f4a54b;
+  border: 1px solid #dddddd;
+}
+
+.main_th {
+  color: #fff;
+  border: 1px solid #ddd;
+}
+
+.td {
+  border: 1px solid #dddddd;
+  padding: 9px;
+  text-align: center;
+}
+
+.td:hover {
+  background-color: #ddd;
+}
