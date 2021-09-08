@@ -26,8 +26,8 @@ export default function Transactions({ items }) {
 }
 
 Transactions.propTypes = {
-  id: PropTypes.number.isRequired,
-  type: PropTypes.string.isRequired,
-  amount: PropTypes.number.isRequired,
-  currency: PropTypes.string.isRequired,
+  id: PropTypes.number,
+  type: PropTypes.string,
+  amount: PropTypes.number,
+  currency: PropTypes.string,
 };

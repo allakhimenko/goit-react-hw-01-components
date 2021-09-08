@@ -1,15 +1,7 @@
 import PropTypes from 'prop-types';
 import s from './User.module.css';
 
-export default function User({
-  avatar,
-  name,
-  tag,
-  location,
-  followers,
-  views,
-  likes,
-}) {
+export default function User({ avatar, name, tag, location, stats }) {
   return (
     <div className={s.container}>
       <div className={s.descr}>
@@ -22,15 +14,15 @@ export default function User({
       <ul className={s.stats}>
         <li className={s.item}>
           <span className={s.label}>Followers</span>
-          <span className={s.quantity}>{followers}</span>
+          <span className={s.quantity}>{stats.followers}</span>
         </li>
         <li className={s.item}>
           <span className={s.label}>Views</span>
-          <span className={s.quantity}>{views}</span>
+          <span className={s.quantity}>{stats.views}</span>
         </li>
         <li className={s.item}>
           <span className={s.label}>Likes</span>
-          <span className={s.quantity}>{likes}</span>
+          <span className={s.quantity}>{stats.likes}</span>
         </li>
       </ul>
     </div>

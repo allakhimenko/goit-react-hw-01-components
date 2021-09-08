@@ -5,7 +5,6 @@ import Statistics from './components/Statistical/Statistical';
 import statistical from './components/Statistical/statistical.json';
 
 import FriendList from './components/FriendList/FriendList';
-import FriendListItem from './components/FriendList/FriendListItem';
 import friends from './components/FriendList/friends.json';
 
 import Transactions from './components/Transactions/Transactions';
@@ -19,14 +18,10 @@ export default function App() {
         name={user.name}
         tag={user.tag}
         location={user.location}
-        followers={user.stats.followers}
-        views={user.stats.views}
-        likes={user.stats.likes}
+        stats={user.stats}
       />
       <Statistics title={'Upload stats'} stats={statistical} />
-      <FriendList>
-        <FriendListItem friends={friends} />
-      </FriendList>
+      <FriendList friends={friends} />
       <Transactions items={transactions} />
     </div>
   );
